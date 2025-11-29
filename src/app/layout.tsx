@@ -6,6 +6,12 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/sonner";
+import { runMigrations } from "@/db/migrate";
+
+if (process.env.NODE_ENV === "production") {
+  runMigrations();
+}
+
 
 export const metadata: Metadata = {
   title: "TaskFlow Pro - Advanced Productivity App",
