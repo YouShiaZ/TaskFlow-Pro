@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:ToDo-App}/local.db",
+            "name": "TaskFlow Local DB"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
